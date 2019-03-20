@@ -1,4 +1,3 @@
-
 sides = []
 def right_triangle(sides)
   return "Треугольник равносторонний, но не является прямоугольным." if sides.uniq.length == 1

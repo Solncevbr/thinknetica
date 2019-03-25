@@ -1,7 +1,6 @@
-vowels_hash = {}
-counter = 1
-("a".."z").each do |letter|
-  vowels_hash[letter] = counter if ['a','e','i','o','u'].include?(letter)
-  counter +=1
-end
-puts vowels_hash
+alphabet = ('a'..'z')
+hash = {}
+vowels = %w( a e i o u )
+alphabet.each.with_index(1) { |letter, index| hash[letter] = index if vowels.include?(letter) }
+
+puts hash
